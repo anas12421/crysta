@@ -12,8 +12,8 @@ Table Of Content
 0. Common CSS Start
 1. Backtotop CSS Start
 2. Navbar CSS Start
-3. 
-4. 
+3. Banner CSS Start
+4. About CSS Start
 5. 
 6. 
 **/
@@ -67,6 +67,18 @@ body {
   overflow-x: hidden;
   font-family: "Plus Jakarta Sans", serif;
   font-weight: 400;
+  color: #3B3B3B;
+}
+
+.title {
+  text-transform: capitalize;
+  border: 1px solid #EBEBEB;
+  padding: 4px 14px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 /* Backtotop CSS Start */
@@ -215,5 +227,179 @@ body {
 }
 
 .main_navbar .book_btn a:hover::after {
+  height: 180px;
+}
+
+/* Banner CSS Start */
+.banner_bg {
+  background: url(../images/banner.png) no-repeat center / cover;
+  padding: 190px 0;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.banner_bg::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #3B3B3B;
+  opacity: 40%;
+  z-index: -1;
+}
+
+.banner_item {
+  padding-left: 30px;
+  color: white;
+}
+
+.banner_item h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.banner_item p {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.banner_item a {
+  padding: 8px 15px;
+  background-color: #1D73F5;
+  color: white;
+  border-radius: 14.5px;
+  -webkit-border-radius: 14.5px;
+  -moz-border-radius: 14.5px;
+  -ms-border-radius: 14.5px;
+  -o-border-radius: 14.5px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s esae;
+  -moz-transition: all 0.3s esae;
+  -ms-transition: all 0.3s esae;
+  -o-transition: all 0.3s esae;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-transform: capitalize;
+  margin-top: 42px;
+}
+
+.banner_item a:hover {
+  color: #1D73F5;
+}
+
+.banner_item a::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.banner_item a:hover::after {
+  height: 180px;
+}
+
+/* About CSS Start */
+#about {
+  margin-top: 140px;
+}
+
+.about_content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  padding-top: 15px;
+  color: #1D73F5;
+}
+
+.about_content p {
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 11px;
+}
+
+.about_content h4 {
+  text-transform: capitalize;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about_content ul {
+  list-style: circle;
+  padding-left: 35px;
+  padding-top: 12px;
+}
+
+.about_content ul li {
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+
+.about_content a {
+  padding: 8px 15px;
+  background-color: #1D73F5;
+  color: white;
+  border: 1px solid #1D73F5;
+  border-radius: 14.5px;
+  -webkit-border-radius: 14.5px;
+  -moz-border-radius: 14.5px;
+  -ms-border-radius: 14.5px;
+  -o-border-radius: 14.5px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s esae;
+  -moz-transition: all 0.3s esae;
+  -ms-transition: all 0.3s esae;
+  -o-transition: all 0.3s esae;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+
+.about_content a:hover {
+  color: #1D73F5;
+}
+
+.about_content a::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.about_content a:hover::after {
   height: 180px;
 }
