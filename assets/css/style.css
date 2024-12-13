@@ -14,7 +14,7 @@ Table Of Content
 2. Navbar CSS Start
 3. Banner CSS Start
 4. About CSS Start
-5. 
+5. Feature CSS Start
 6. 
 **/
 
@@ -83,14 +83,14 @@ body {
 
 /* Backtotop CSS Start */
 
-/* .backtotop i {
+.backtotop i {
   position: fixed;
   bottom: 30px;
   right: 30px;
   height: 40px;
   width: 40px;
   color: white;
-  background-color: #0E44CF;
+  background-color: #1D73F5;
   font-size: 22px;
   line-height: 40px;
   text-align: center;
@@ -109,14 +109,16 @@ body {
 
 .backtotop i:hover {
   background-color: white;
-  color: #0E44CF;
-} */
+  color: #1D73F5;
+}
 
 /* Navbar CSS Start */
 .main_navbar {
   padding: 10px 0;
-  /* position: fixed;
-  width: 100%; */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99999;
 }
 
 .main_navbar ul {
@@ -401,5 +403,151 @@ body {
 }
 
 .about_content a:hover::after {
+  height: 180px;
+}
+
+/* Feature CSS Start */
+#feature {
+  background-color: #F4F4F4;
+  margin-top: 140px;
+  padding: 60px 0;
+}
+
+.feature_head h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  padding-top: 15px;
+  color: #1D73F5;
+}
+
+.feature_head p {
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.feature_item {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  margin-top: 22px;
+}
+
+.feature_item_details {
+  padding: 22px;
+  display: flex;
+  height: auto;
+}
+
+.feature_item_details_text h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.feature_item_details_text p {
+  font-size: 16px;
+  padding-top: 16px;
+  padding-right: 100px;
+  line-height: 150%;
+}
+
+.feature_item_details_icon i {
+  height: 56px;
+  width: 56px;
+  line-height: 56px;
+  color: white;
+  background-color: #1D73F5;
+  text-align: center;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border: 1px solid #1D73F5;
+}
+
+.feature_item_details_icon i:hover {
+  color: #1D73F5;
+  background-color: white;
+  cursor: pointer;
+}
+
+.feature_item_image {
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.feature_item_image img {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.feature_item:hover .feature_item_image img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.feature_schedule_btn a {
+  padding: 8px 15px;
+  background-color: #1D73F5;
+  color: white;
+  border: 1px solid #1D73F5;
+  border-radius: 14.5px;
+  -webkit-border-radius: 14.5px;
+  -moz-border-radius: 14.5px;
+  -ms-border-radius: 14.5px;
+  -o-border-radius: 14.5px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s esae;
+  -moz-transition: all 0.3s esae;
+  -ms-transition: all 0.3s esae;
+  -o-transition: all 0.3s esae;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.feature_schedule_btn a:hover {
+  color: #1D73F5;
+}
+
+.feature_schedule_btn a::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.feature_schedule_btn a:hover::after {
   height: 180px;
 }
