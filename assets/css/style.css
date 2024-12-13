@@ -15,7 +15,7 @@ Table Of Content
 3. Banner CSS Start
 4. About CSS Start
 5. Feature CSS Start
-6. 
+6. Pricing CSS Start
 **/
 
 /* Common CSS Start */
@@ -323,7 +323,7 @@ body {
 
 /* About CSS Start */
 #about {
-  margin-top: 140px;
+  padding-top: 140px;
 }
 
 .about_content h2 {
@@ -550,4 +550,213 @@ body {
 
 .feature_schedule_btn a:hover::after {
   height: 180px;
+}
+
+/* Pricing CSS Start */
+#pricing {
+  padding-top: 140px;
+}
+
+.pricing_head h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  padding-top: 15px;
+  color: #1D73F5;
+}
+
+.pricing_head p {
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.pricing_content {
+  padding-top: 25px;
+}
+
+.pricing_content_btn ul li button {
+  padding: 10px 20px;
+  border: 1px solid #EBEBEB !important;
+  color: #0D121F !important;
+  border-radius: 16px !important;
+  -webkit-border-radius: 16px !important;
+  -moz-border-radius: 16px !important;
+  -ms-border-radius: 16px !important;
+  -o-border-radius: 16px !important;
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+.pricing_content_btn ul li button.active {
+  background-color: #1D73F5 !important;
+  border-color: #1D73F5 !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.pricing_content_item {
+  padding: 45px 0 35px 45px;
+  margin-top: 12px;
+  background-color: #F4F4F4;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.pricing_content_item_details h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pricing_content_item_details p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.pricing_content_item_details a {
+  margin-top: 65px;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid #1D73F5;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  color: #1D73F5;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pricing_content_item_details a:hover {
+  color: white;
+}
+
+.pricing_content_item_details a::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  background-color: #1D73F5;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.pricing_content_item_details a:hover::after {
+  height: 180px;
+}
+.pricing_content_item_main ul li{
+  margin-bottom: 20px;
+}
+.pricing_content_item_main ul li i {
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  background-color: #1D73F5;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 500%;
+  -moz-border-radius: 500%;
+  -ms-border-radius: 500%;
+  -o-border-radius: 500%;
+}
+.pricing_content_item_main ul li span{
+  color: #0D121F;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Contact CSS Start */
+#contact{
+  padding-top: 110px;
+}
+.contact_head h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  padding-top: 15px;
+  color: #1D73F5;
+}
+
+.contact_head p {
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+.contact_form label{
+  display: block;
+  color: #0D121F;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.contact_form input,
+.contact_form textarea{
+  margin-top: 10px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  color: #525252;
+  border: 1px solid #E7E7E9 !important;
+  width: 100%;
+}
+.contact_form input:focus,
+.contact_form textarea:focus{
+  border-color: #0D121F !important;
+}
+.contact_form input::placeholder,
+.contact_form textarea::placeholder{
+  text-transform: capitalize;
+}
+.contact_form button{
+  margin-top: 20px;
+  border: none;
+  border: 1px solid #1D73F5;
+  /* border-color: #1D73F5 !important; */
+  background-color: #1D73F5;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.contact_form button:hover{
+  color: #1D73F5;
+  background-color: white;
 }
