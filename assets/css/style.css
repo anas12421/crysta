@@ -16,6 +16,8 @@ Table Of Content
 4. About CSS Start
 5. Feature CSS Start
 6. Pricing CSS Start
+7. Consultation CSS Start
+8. Footer CSS Start
 **/
 
 /* Common CSS Start */
@@ -663,9 +665,11 @@ body {
 .pricing_content_item_details a:hover::after {
   height: 180px;
 }
-.pricing_content_item_main ul li{
+
+.pricing_content_item_main ul li {
   margin-bottom: 20px;
 }
+
 .pricing_content_item_main ul li i {
   height: 24px;
   width: 24px;
@@ -681,15 +685,18 @@ body {
   -ms-border-radius: 500%;
   -o-border-radius: 500%;
 }
-.pricing_content_item_main ul li span{
+
+.pricing_content_item_main ul li span {
   color: #0D121F;
   font-weight: 500;
   font-size: 16px;
 }
+
 /* Contact CSS Start */
-#contact{
+#contact {
   padding-top: 110px;
 }
+
 .contact_head h2 {
   font-size: 40px;
   font-weight: 700;
@@ -704,7 +711,8 @@ body {
   padding-top: 5px;
   padding-bottom: 30px;
 }
-.contact_form label{
+
+.contact_form label {
   display: block;
   color: #0D121F;
   text-transform: capitalize;
@@ -712,8 +720,9 @@ body {
   font-weight: 600;
   margin-top: 15px;
 }
+
 .contact_form input,
-.contact_form textarea{
+.contact_form textarea {
   margin-top: 10px;
   padding: 14px;
   font-size: 14px;
@@ -727,15 +736,18 @@ body {
   border: 1px solid #E7E7E9 !important;
   width: 100%;
 }
+
 .contact_form input:focus,
-.contact_form textarea:focus{
+.contact_form textarea:focus {
   border-color: #0D121F !important;
 }
+
 .contact_form input::placeholder,
-.contact_form textarea::placeholder{
+.contact_form textarea::placeholder {
   text-transform: capitalize;
 }
-.contact_form button{
+
+.contact_form button {
   margin-top: 20px;
   border: none;
   border: 1px solid #1D73F5;
@@ -756,7 +768,173 @@ body {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-.contact_form button:hover{
+
+.contact_form button:hover {
   color: #1D73F5;
   background-color: white;
+}
+
+/* Consultation CSS Start */
+#consultation {
+  margin-top: 140px;
+}
+
+.consultation_layout {
+  border: 1px solid #1D73F5;
+  padding: 14px 20px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.consultation_text p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D73F5;
+}
+
+.consultation_btn a {
+  padding: 10px 15px;
+  background-color: #1D73F5;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border: 1px solid #1D73F5;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.consultation_btn a:hover {
+  color: #1D73F5;
+}
+
+.consultation_btn a::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.consultation_btn a:hover::after {
+  height: 180px;
+}
+
+/* Footer CSS Start */
+footer {
+  margin-top: 12px;
+}
+
+.footer_layout {
+  background-color: #1D73F5;
+  padding: 32px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.footer_details P {
+  color: white;
+  line-height: 150%;
+  padding-top: 17px;
+  font-size: 16px;
+}
+
+.footer_social {
+  margin-top: 20px;
+}
+
+.footer_social a {
+  color: black;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer_social a:hover {
+  color: #fff;
+  background-color: transparent;
+  transform: scale(1.1) translateY(-5px);
+  -webkit-transform: scale(1.1) translateY(-5px);
+  -moz-transform: scale(1.1) translateY(-5px);
+  -ms-transform: scale(1.1) translateY(-5px);
+  -o-transform: scale(1.1) translateY(-5px);
+}
+
+.footer_menu {
+  padding-bottom: 40px;
+}
+
+.footer_menu h5 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+}
+
+.footer_menu ul li a {
+  color: white;
+  font-size: 16px;
+  margin-top: 18px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer_menu ul li a:hover {
+  color: #0D121F;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.copyright_text,
+.copyright_menu a{
+  padding-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+.copyright_menu a{
+  margin-left: 30px;
+  text-transform: capitalize;
 }
