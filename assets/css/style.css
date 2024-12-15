@@ -842,7 +842,7 @@ body {
 
 /* Footer CSS Start */
 footer {
-  margin-top: 12px;
+  margin: 12px 0;
 }
 
 .footer_layout {
@@ -928,13 +928,15 @@ footer {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
+
 .copyright_text,
-.copyright_menu a{
+.copyright_menu a {
   padding-top: 10px;
   font-size: 14px;
   color: white;
 }
-.copyright_menu a{
+
+.copyright_menu a {
   margin-left: 30px;
   text-transform: capitalize;
 }
